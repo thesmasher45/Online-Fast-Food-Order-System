@@ -1,0 +1,188 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user_panel_user" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+
+        <link rel="shortcut icon" href="../assets/images/logo/favicon.png" type="image/x-icon" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/animate-3.7.0.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome-4.7.0.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-4.1.3.min.css" />
+    <link rel="stylesheet" href="../assets/css/owl-carousel.min.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.datetimepicker.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+
+    <script src="../js/bootstrap.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.min.js"></script>
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+<div>
+
+        <div class="preloader" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+        <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo-area"><marquee><asp:Label runat="server" ID="ulabel"  Font-Bold="true"></asp:Label></marquee>
+                      <a href="home.aspx">
+                       <img src="../assets/images/logomain.jpg" height="65" width="65" />
+                        <br /><strong><span class="auto-style1">Pizza Home</span></strong>
+                          </a>  
+
+ 
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="custom-navbar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>  
+                    <div class="main-menu">
+                        <ul>
+                            <li class="active"><a href="home.aspx">home</a></li>
+                             <li><a href="#">Menu</a>
+                                <ul class="sub-menu">
+                                    <li><a href="menu.aspx?bid=Garlic Pizza">Garlic Pizza</a></li>
+                                    <li><a href="menu.aspx?bid=Mushrooms Pizza">Mushrooms Pizza</a></li>
+                                    <li><a href="menu.aspx?bid=Onions Pizza">Onions Pizza</a></li>
+                                    <li><a href="menu.aspx?bid=Chicken Pizza">Chicken Pizza</a></li>
+                                    <li><a href="menu.aspx?bid=Pepperoni Pizza">Pepperoni Pizza</a></li>                                    
+                                </ul>
+                            </li>
+                            <li><a href="myorder.aspx">my orders</a></li>
+                            
+                            <li><a href="../login.aspx">Logout</a></li>
+                            <li>&nbsp;</li>
+                            <li>&nbsp;</li>
+                            <li>&nbsp;</li>
+                            <li>
+                                <a href="mycart.aspx"> <img src="../images/cart.png"  height="35" width="35"/><asp:Label runat="server" class="cart-item-count" ID="count_lbl" >0</asp:Label></a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    </div>
+
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+
+
+         <footer class="footer-area">
+        <div class="footer-widget section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-widget single-widget1">
+                            <h5 class="mb-4">About us</h5>
+                            <p class="mt-3">This online ordering software was built with strong focus on the needs of pizza restaurants.
+
+From menu to promotions and delivery settings, we’re very confident that you’ll find all that you need to run a successful business online.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-widget single-widget2 my-5 my-md-0">
+                            <h5 class="mb-4">contact us</h5>
+                            <div class="d-flex">
+                                <div class="into-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p>funtacy shop khed </p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="into-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p>(123) 456 78 90</p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="into-icon">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p>support@axiomthemes.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-widget single-widget3">
+                            <h5 class="mb-4">opening hours</h5>
+                            <p>Monday ...................... Closed</p>
+                            <p>Tue-Fri .............. 10 am - 12 pm</p>
+                            <p>Sat-Sun ............... 8 am - 11 pm</p>
+                            <p>Holidays ............. 10 am - 12 pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6">
+                        <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright ©2019 All rights reserved
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="social-icons">
+                            <ul>
+                                <li class="no-margin">Follow Us</li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    </form>
+</body>
+</html>
